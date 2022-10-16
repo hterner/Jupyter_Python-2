@@ -1,0 +1,39 @@
+https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
+
+Introduction:
+Bank Marketing data is a collection of
+41,188 records, related to
+direct marketing campaigns
+(telephone calls) from a portu banking institution
+cheerful.
+The purpose of classification is to predict whether the
+client will take out a term deposit (variable y)
+
+Step 1. First identify the classes available in the chosen dataset.
+
+Some basic observations:
+• We have variables numerical and categorical;
+• We have 21 features;
+• The goal is to predict whether a person will register (column target 'y');
+• It is a binary classification.
+
+Step 2. Explore the dataset and identify values missing, unknown, etc.
+Step 3. Develop the correlation matrix
+Step 4. Perform train/test split (80-20) of original dataset (seed 44)
+Step 5. Using and comparing different models: Naive Bayes,Logistic Regression, Decision Tree, KNN, Random Forest
+Step 6. Calculate Accuracy based on test values
+Step 7.The best model for the group of data - Random Forest
+Step 8. Using Random Forest for the prediction
+
+Conclusion
+• The Random Forest algorithm represents, in our case, the best prediction model, with metrics such that
+Accuracy of 98.21%, F-score of 98.27% and a performance evolution of 97.56%.
+• The correct way to know the minimum that we must achieve with our models is 50.8%, the precision
+nothing
+• We must use more than one metric when dealing with unbalanced data. Accuracy is not enough
+for the selection of a prediction model.
+• F-score is a metric considered important to measure the accuracy of a model because it penalizes the
+false negatives.
+• According to our model, having type II error (false positive) is more dangerous because we predicted that the
+customer is already subscribed to the CIG when it is false because the marketing company will stop contacting him
+target customer
